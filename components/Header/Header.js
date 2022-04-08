@@ -9,10 +9,10 @@ const Header = () => {
             <Link href="/">Home</Link>
           </li>
           <li className={styles.menuItem}>
-            <Link href="/pages/index.js">Users</Link>
+            <Link href="/users">Users</Link>
           </li>
           <li className={styles.menuItem}>
-            <Link href="/pages/index.js">Comments</Link>
+            <Link href="/comments">Comments</Link>
           </li>
         </ul>
       </div>
