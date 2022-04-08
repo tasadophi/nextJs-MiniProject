@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const user = await getData(params.id);
+  const user = await getData("users", params.id);
   return {
     props: { user },
   };
