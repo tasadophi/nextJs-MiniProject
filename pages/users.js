@@ -1,5 +1,5 @@
 import Layout from "../Layout/Layout";
-import { getUsers } from "../lib/api";
+import { getDataList } from "../lib/api";
 import styles from "../styles/Users.module.css";
 import Link from "next/link";
 import Head from "next/head";
@@ -35,7 +35,7 @@ const Users = ({ users }) => {
 export default Users;
 
 export async function getStaticProps() {
-  const users = await getUsers("users");
+  const users = await getDataList("users");
   return {
     props: { users },
   };

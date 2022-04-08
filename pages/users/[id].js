@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout from "../../Layout/Layout";
-import { getPaths, getUser } from "../../lib/api";
+import { getPaths, getData } from "../../lib/api";
 import styles from "../../styles/User.module.css";
 
 const User = ({ user }) => {
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const user = await getUser(params.id);
+  const user = await getData(params.id);
   return {
     props: { user },
   };
