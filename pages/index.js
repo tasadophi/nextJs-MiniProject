@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../Layout/Layout";
 import styles from "../styles/Home.module.css";
-import { BiComment, BiUser, BiAlbum } from "react-icons/bi";
+import { BiComment, BiUser, BiPhotoAlbum } from "react-icons/bi";
 import Link from "next/link";
 
 export default function Home() {
@@ -30,10 +30,10 @@ export default function Home() {
               <span>See Posts</span>
             </div>
           </Link>
-          <Link href="/albums">
+          <Link href="/photos">
             <div className={styles.box}>
-              <BiAlbum className={styles.icon} />
-              <span>See Albums</span>
+              <BiPhotoAlbum className={styles.icon} />
+              <span>See Photos</span>
             </div>
           </Link>
         </div>
