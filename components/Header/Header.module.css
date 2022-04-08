@@ -1,0 +1,25 @@
+.header {
+  background-color: #e9d5ff;
+  color: #7e22ce;
+}
+
+.menuList {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.menuItem {
+  padding: .7rem;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.menuItem a {
+  padding: inherit;
+}
+
+.menuItem:hover {
+  background-color: #f3e8ff;
+}
