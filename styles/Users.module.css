@@ -18,3 +18,9 @@
   cursor: pointer;
   gap: 1rem;
 }
+
+.userBox span{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
