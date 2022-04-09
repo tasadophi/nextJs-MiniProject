@@ -20,6 +20,12 @@
   border-radius: 5px;
   color: #7e22ce;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background-color: #7e22ce;
+  color: #fff;
 }
 
 @media screen and (min-width: 1024px) {
